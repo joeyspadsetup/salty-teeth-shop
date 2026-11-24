@@ -79,8 +79,9 @@ img { max-width: 100%; display: block; }
 .btn-buy:hover { background: var(--tan-dark); }
 
 .btn-disabled {
-  background: #cfe6e6;
-  color: #4f7a7c;
+  background: var(--tan);
+  color: #000000;
+  border: 1px solid #000000;
   width: 100%;
   text-align: center;
   cursor: not-allowed;
