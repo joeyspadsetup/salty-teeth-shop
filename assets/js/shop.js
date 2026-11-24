@@ -2,9 +2,9 @@ import { firebaseConfig, isConfigured } from './firebase-config.js';
 
 const CATEGORY_ICONS = {
   necklace: `<svg viewBox="0 0 100 100" class="placeholder-icon" fill="none" stroke="#1d3557" stroke-width="2.5"><path d="M20 20 Q50 70 80 20" stroke-linecap="round"/><circle cx="50" cy="66" r="4" fill="#1d3557" stroke="none"/><path d="M50 70 L58 86 L42 86 Z" fill="#7c9c96" stroke="none"/></svg>`,
-  bracelet: `<svg viewBox="0 0 100 100" class="placeholder-icon" fill="none" stroke="#1d3557" stroke-width="2.5"><ellipse cx="50" cy="50" rx="34" ry="20"/><circle cx="20" cy="50" r="3" fill="#b08d57" stroke="none"/><circle cx="35" cy="32" r="3" fill="#7c9c96" stroke="none"/><circle cx="65" cy="32" r="3" fill="#b08d57" stroke="none"/><circle cx="80" cy="50" r="3" fill="#7c9c96" stroke="none"/></svg>`,
+  bracelet: `<svg viewBox="0 0 100 100" class="placeholder-icon" fill="none" stroke="#1d3557" stroke-width="2.5"><ellipse cx="50" cy="50" rx="34" ry="20"/><circle cx="20" cy="50" r="3" fill="#4fb3bf" stroke="none"/><circle cx="35" cy="32" r="3" fill="#7c9c96" stroke="none"/><circle cx="65" cy="32" r="3" fill="#8fd3d6" stroke="none"/><circle cx="80" cy="50" r="3" fill="#2e8b94" stroke="none"/></svg>`,
   earrings: `<svg viewBox="0 0 100 100" class="placeholder-icon" fill="none" stroke="#1d3557" stroke-width="2.5"><circle cx="35" cy="22" r="5"/><path d="M35 27 L35 55 L27 72 L43 72 Z" fill="#7c9c96" stroke="none"/><circle cx="65" cy="22" r="5"/><path d="M65 27 L65 55 L57 72 L73 72 Z" fill="#7c9c96" stroke="none"/></svg>`,
-  keychain: `<svg viewBox="0 0 100 100" class="placeholder-icon" fill="none" stroke="#1d3557" stroke-width="2.5"><circle cx="50" cy="24" r="12"/><path d="M50 36 L50 55 L38 78 L62 78 Z" fill="#b08d57" stroke="none"/></svg>`,
+  keychain: `<svg viewBox="0 0 100 100" class="placeholder-icon" fill="none" stroke="#1d3557" stroke-width="2.5"><circle cx="50" cy="24" r="12"/><path d="M50 36 L50 55 L38 78 L62 78 Z" fill="#2e8b94" stroke="none"/></svg>`,
 };
 
 const SAMPLE_PRODUCTS = [

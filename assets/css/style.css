@@ -5,7 +5,9 @@
   --navy-light: #2c4b73;
   --sage: #7c9c96;
   --sage-dark: #5e7d78;
-  --tan: #b08d57;
+  --aqua: #4fb3bf;
+  --aqua-light: #8fd3d6;
+  --aqua-dark: #2e8b94;
   --white: #ffffff;
   --shadow: rgba(29, 53, 87, 0.14);
   --radius: 14px;
@@ -286,7 +288,7 @@ img { max-width: 100%; display: block; }
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.badge.sample { background: var(--tan); color: var(--white); }
+.badge.sample { background: var(--aqua-dark); color: var(--white); }
 .badge.sold { background: var(--navy); color: var(--white); }
 
 .product-info { padding: 1.1rem 1.1rem 1.3rem; display: flex; flex-direction: column; gap: 0.45rem; flex: 1; }
