@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Salty Teeth | Shop Admin</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body style="background: var(--cream);">
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand"><img src="assets/img/logo.png" alt="Salty Teeth" class="brand-logo"></a>
+    <nav class="main-nav" id="main-nav">
+      <a href="index.html">View Live Site</a>
+      <a href="#" id="logout-link" hidden>Log Out</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">&#9776;</button>
+  </div>
+</header>
+
+<div class="admin-wrap">
+
+  <div id="not-configured-notice" class="notice" hidden>
+    <strong>Firebase isn't connected yet.</strong> This admin page needs a free Firebase project
+    before it can save listings. See <code>SETUP.md</code> in the project folder for the 10-minute,
+    no-code setup — once that's done, reload this page and log in below.
+  </div>
+
+  <div id="login-card" class="admin-card" hidden>
+    <h2>Shop Admin Login</h2>
+    <form id="login-form">
+      <div class="field">
+        <label for="login-email">Email</label>
+        <input type="email" id="login-email" required autocomplete="username">
+      </div>
+      <div class="field">
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" required autocomplete="current-password">
+      </div>
+      <button type="submit" class="btn btn-primary">Log In</button>
+      <p class="error-text" id="login-error"></p>
+    </form>
+  </div>
+
+  <div id="admin-panel" hidden>
+    <div class="admin-card">
+      <h2>Add a New Piece</h2>
+      <form id="product-form">
+        <div class="field">
+          <label for="p-name">Name</label>
+          <input type="text" id="p-name" required placeholder="e.g. Single Tooth Necklace">
+        </div>
+        <div class="field">
+          <label for="p-category">Category</label>
+          <select id="p-category" required>
+            <option value="necklace">Necklace</option>
+            <option value="bracelet">Bracelet</option>
+            <option value="earrings">Earrings</option>
+            <option value="keychain">Keychain</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="p-price">Price (USD)</label>
+          <input type="number" id="p-price" min="0" step="0.01" required placeholder="e.g. 28">
+        </div>
+        <div class="field">
+          <label for="p-description">Description</label>
+          <textarea id="p-description" placeholder="A short description of the piece"></textarea>
+        </div>
+        <div class="field">
+          <label for="p-stripe-link">Stripe Payment Link</label>
+          <input type="url" id="p-stripe-link" placeholder="https://buy.stripe.com/...">
+          <small>Create this in your Stripe Dashboard → Payment Links, then paste the URL here. See SETUP.md.</small>
+        </div>
+        <div class="field">
+          <label for="p-photo">Photo</label>
+          <input type="file" id="p-photo" accept="image/*" required>
+          <div class="progress-bar" id="upload-progress"><span></span></div>
+        </div>
+        <button type="submit" class="btn btn-primary" id="save-btn">Save Listing</button>
+        <p class="error-text" id="form-error"></p>
+      </form>
+    </div>
+
+    <div class="admin-card">
+      <h2>Your Listings</h2>
+      <div id="listings"></div>
+    </div>
+  </div>
+
+</div>
+
+<script type="module" src="assets/js/admin.js"></script>
+</body>
+</html>

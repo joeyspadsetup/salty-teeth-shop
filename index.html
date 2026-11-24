@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Salty Teeth | Handmade Shark Tooth & Shell Jewelry — Atlantic Beach, FL</title>
+<meta name="description" content="One-of-a-kind shark tooth and shell jewelry, hand-collected and handmade by Darah Gennusa in Atlantic Beach, Florida.">
+<link rel="icon" href="assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#top" class="brand"><img src="assets/img/logo.png" alt="Salty Teeth" class="brand-logo"></a>
+    <nav class="main-nav" id="main-nav">
+      <a href="#shop">Shop</a>
+      <a href="#story">Story</a>
+      <a href="#care">Shipping &amp; Care</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">&#9776;</button>
+  </div>
+</header>
+
+<section class="hero" id="top" style="background-image:url('assets/img/hero.jpg')">
+  <div class="hero-overlay">
+    <p class="eyebrow">&bull; Atlantic Beach, Florida &bull;</p>
+    <h1>Salty Teeth</h1>
+    <p class="hero-sub">One-of-a-kind shark tooth &amp; shell jewelry, hand-collected and hand-strung right on the coast.</p>
+    <a href="#shop" class="btn btn-primary">Shop the Collection</a>
+  </div>
+</section>
+
+<section class="story" id="story">
+  <div class="story-grid">
+    <img src="assets/img/about.jpg" alt="Shark tooth necklace on a surfboard">
+    <div class="story-copy">
+      <p class="eyebrow">Our Story</p>
+      <h2>Locally Handmade by Darah Gennusa</h2>
+      <p>Every piece starts the same way — barefoot, combing the shoreline of Atlantic Beach for shark teeth, shells, and sea glass the ocean has already perfected. Nothing is mass-produced and nothing is ever quite the same twice.</p>
+      <p>Each find gets wire-wrapped, beaded, or strung by hand into something wearable — a small piece of the beach you can take with you.</p>
+      <p class="signature">— Darah</p>
+    </div>
+  </div>
+</section>
+
+<section class="gallery">
+  <img src="assets/img/gallery1.jpg" alt="Beaded necklaces and bracelets">
+  <img src="assets/img/gallery2.jpg" alt="Shark tooth pendant necklaces">
+  <img src="assets/img/gallery3.jpg" alt="Shark tooth necklace and earring set">
+</section>
+
+<section class="shop" id="shop">
+  <div class="shop-heading">
+    <p class="eyebrow">The Collection</p>
+    <h2>Shop the Collection</h2>
+    <p>Every piece is one-of-a-kind — once it's gone, it's gone.</p>
+  </div>
+
+  <div class="dev-banner" id="dev-banner" hidden>
+    These are sample listings so you can see the layout. Connect Firebase (see SETUP.md) to go live with real, in-stock pieces.
+  </div>
+
+  <div class="filters" id="filters">
+    <button data-filter="all" class="active">All</button>
+    <button data-filter="necklace">Necklaces</button>
+    <button data-filter="bracelet">Bracelets</button>
+    <button data-filter="earrings">Earrings</button>
+    <button data-filter="keychain">Keychains</button>
+  </div>
+
+  <div class="product-grid" id="product-grid"></div>
+  <p class="shop-note" id="shop-empty-note" hidden>More pieces coming soon — follow along on <a href="https://www.instagram.com/shopsaltyteeth" target="_blank" rel="noopener">Instagram</a>.</p>
+</section>
+
+<section class="care" id="care">
+  <h2>Shipping &amp; Care</h2>
+  <div class="care-grid">
+    <div>
+      <h3>Shipping</h3>
+      <p>Every order ships within 3–5 business days in protective packaging. Shipping cost and timeframe are calculated at checkout.</p>
+    </div>
+    <div>
+      <h3>Care</h3>
+      <p>Keep your piece dry when possible, store it flat, and avoid pulling on wire-wrapped teeth and pendants. A little salt-worn character is part of the charm.</p>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <img src="assets/img/logo.png" alt="Salty Teeth">
+  <p>Follow along &amp; shop new finds on <a href="https://www.instagram.com/shopsaltyteeth" target="_blank" rel="noopener">@shopsaltyteeth</a></p>
+  <p class="fine-print">Handmade in Atlantic Beach, Florida &middot; &copy; <span id="year"></span> Salty Teeth</p>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script type="module" src="assets/js/shop.js"></script>
+</body>
+</html>
