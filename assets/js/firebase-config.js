@@ -5,12 +5,12 @@
 // These values are not secret — they are meant to be public in client-side code.
 // ─────────────────────────────────────────────────────────────
 export const firebaseConfig = {
-  apiKey: "REPLACE_WITH_YOUR_FIREBASE_API_KEY",
-  authDomain: "REPLACE_ME.firebaseapp.com",
-  projectId: "REPLACE_ME",
-  storageBucket: "REPLACE_ME.appspot.com",
-  messagingSenderId: "REPLACE_ME",
-  appId: "REPLACE_ME",
+  apiKey: "AIzaSyCehMmNdeEfqbR3pTjllGVRW1GfDLIS7VI",
+  authDomain: "salty-teeth-shop.firebaseapp.com",
+  projectId: "salty-teeth-shop",
+  storageBucket: "salty-teeth-shop.firebasestorage.app",
+  messagingSenderId: "1006097382415",
+  appId: "1:1006097382415:web:a4a3abc5b84627a7c9f77a",
 };
 
 export const isConfigured = firebaseConfig.apiKey !== "REPLACE_WITH_YOUR_FIREBASE_API_KEY";
