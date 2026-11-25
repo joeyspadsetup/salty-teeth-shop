@@ -75,6 +75,17 @@ unless the shop gets genuinely large.
 
 1. Darah creates a free account at **stripe.com** under her own name/bank details
    (she's 22, so this is hers to own — payouts land in her bank account).
+
+   **Important — skip the "Building with an AI agent?" screen.** After signup,
+   Stripe sometimes shows a setup page with a "Copy prompt" box and sandbox
+   **API keys** (publishable + secret key). That's for a different kind of
+   integration (a full checkout system wired into backend code) — we don't need
+   it and won't use it. Click **Back** or navigate away from that screen. Never
+   copy/paste the **secret key** anywhere outside Stripe's own dashboard — not
+   into this site, not into a chat with Sue, not anywhere. We only ever need
+   **Payment Link URLs** (below), which are safe to share since they're just
+   checkout links, not credentials.
+
 2. For each finished piece, in the Stripe Dashboard: **Payment links → + New link**.
    Enter the item name, price, and upload the same photo she's using on the site.
    Under "Collect customer information," turn on **Shipping address** so you get the
