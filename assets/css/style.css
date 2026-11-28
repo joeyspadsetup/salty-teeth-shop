@@ -24,7 +24,7 @@ body {
   font-family: 'Jost', sans-serif;
   color: var(--navy);
   background: var(--cream-light);
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 h1, h2, h3, .brand-name {
@@ -186,12 +186,12 @@ img { max-width: 100%; display: block; }
 }
 .hero-sub {
   font-size: 1.05rem;
-  margin-bottom: 1.8rem;
+  margin-bottom: 1.4rem;
   color: #eef3f0;
 }
 
 /* Story */
-.story { padding: 4.5rem 1.25rem; }
+.story { padding: 3rem 1.25rem; }
 .story-grid {
   max-width: 1050px;
   margin: 0 auto;
@@ -201,9 +201,9 @@ img { max-width: 100%; display: block; }
   align-items: center;
 }
 .story-grid img { border-radius: var(--radius); box-shadow: 0 20px 40px var(--shadow); }
-.story-copy h2 { font-size: 2rem; margin-bottom: 1rem; }
-.story-copy p { margin-bottom: 1rem; }
-.story-copy .signature { font-family: 'Playfair Display', serif; font-style: italic; color: var(--sage-dark); margin-top: 1.5rem; }
+.story-copy h2 { font-size: 2rem; margin-bottom: 0.75rem; }
+.story-copy p { margin-bottom: 0.65rem; }
+.story-copy .signature { font-family: 'Playfair Display', serif; font-style: italic; color: var(--sage-dark); margin-top: 1rem; }
 
 .story-grid--centered {
   grid-template-columns: 1fr;
@@ -219,14 +219,14 @@ img { max-width: 100%; display: block; }
 /* Gallery strip */
 .gallery {
   max-width: 1100px;
-  margin: 0 auto 4rem;
+  margin: 0 auto 2.5rem;
   padding: 0 1.25rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
 .gallery img { border-radius: var(--radius); height: 260px; width: 100%; object-fit: cover; box-shadow: 0 14px 28px var(--shadow); }
-.gallery img:first-child { object-position: center bottom; }
+.gallery img:first-child { object-position: center 70%; }
 
 @media (max-width: 720px) {
   .gallery { grid-template-columns: 1fr; }
@@ -236,14 +236,14 @@ img { max-width: 100%; display: block; }
 /* Shop */
 .shop {
   background: var(--cream);
-  padding: 4.5rem 1.25rem 5rem;
+  padding: 3rem 1.25rem 3.5rem;
 }
-.shop-heading { text-align: center; max-width: 640px; margin: 0 auto 2.5rem; }
-.shop-heading h2 { font-size: 2.1rem; margin-bottom: 0.6rem; }
+.shop-heading { text-align: center; max-width: 640px; margin: 0 auto 1.75rem; }
+.shop-heading h2 { font-size: 2.1rem; margin-bottom: 0.5rem; }
 
 .filters {
   max-width: 1100px;
-  margin: 0 auto 2.5rem;
+  margin: 0 auto 1.75rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -316,7 +316,7 @@ img { max-width: 100%; display: block; }
 
 .shop-note {
   text-align: center;
-  margin-top: 2.5rem;
+  margin-top: 1.75rem;
   color: var(--navy-light);
 }
 .shop-note a { color: var(--sage-dark); font-weight: 600; text-decoration: underline; }
@@ -333,9 +333,9 @@ img { max-width: 100%; display: block; }
 }
 
 /* Care */
-.care { padding: 4.5rem 1.25rem; max-width: 900px; margin: 0 auto; }
-.care h2 { text-align: center; margin-bottom: 2rem; font-size: 2rem; }
-.care-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+.care { padding: 3rem 1.25rem; max-width: 900px; margin: 0 auto; }
+.care h2 { text-align: center; margin-bottom: 1.5rem; font-size: 2rem; }
+.care-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.75rem; }
 .care-grid h3 { font-family: 'Jost', sans-serif; font-weight: 600; color: var(--sage-dark); margin-bottom: 0.5rem; text-transform: uppercase; font-size: 0.95rem; letter-spacing: 0.05em; }
 
 @media (max-width: 680px) {
@@ -346,13 +346,13 @@ img { max-width: 100%; display: block; }
 footer {
   background: var(--navy);
   color: #d9e2ec;
-  padding: 3rem 1.25rem 2rem;
+  padding: 2.25rem 1.25rem 1.75rem;
   text-align: center;
 }
-footer img { margin: 0 auto 1.25rem; height: 140px; border-radius: var(--radius); box-shadow: 0 14px 28px var(--shadow); }
+footer img { margin: 0 auto 1rem; height: 140px; border-radius: var(--radius); box-shadow: 0 14px 28px var(--shadow); }
 footer a { font-weight: 600; }
 footer a:hover { color: var(--sage); }
-footer .fine-print { margin-top: 1.5rem; font-size: 0.8rem; opacity: 0.65; }
+footer .fine-print { margin-top: 1rem; font-size: 0.8rem; opacity: 0.65; }
 
 /* Admin page shared bits */
 .admin-wrap {
