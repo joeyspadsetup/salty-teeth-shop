@@ -227,6 +227,7 @@ img { max-width: 100%; display: block; }
 }
 .gallery img { border-radius: var(--radius); height: 260px; width: 100%; object-fit: cover; box-shadow: 0 14px 28px var(--shadow); }
 .gallery img:first-child { object-position: center 70%; }
+.gallery img:last-child { object-position: center 70%; }
 
 @media (max-width: 720px) {
   .gallery { grid-template-columns: 1fr; }
